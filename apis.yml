@@ -8,7 +8,7 @@ description: >-
   the Kyndryl Bridge integration and observability platform, runs the Kyndryl
   Vital design studios, and partners with hyperscalers including AWS, Azure,
   Google Cloud, and SAP. No public developer API has been documented.
-type: Contract
+kind: contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Fortune 500
@@ -35,7 +35,7 @@ common:
     url: https://www.kyndryl.com/us/en/services/bridge
   - type: Partners
     url: https://www.kyndryl.com/us/en/about-us/alliances
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/kyndryl-design-system
 maintainers:
   - FN: Kin Lane
