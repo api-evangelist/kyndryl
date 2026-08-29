@@ -9,6 +9,17 @@ description: >-
   Vital design studios, and partners with hyperscalers including AWS, Azure,
   Google Cloud, and SAP. No public developer API has been documented.
 kind: contract
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
