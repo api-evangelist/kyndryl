@@ -186,6 +186,64 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-uk-g-cloud-suppliers.py
   first_seen: '2026-10-21'
+- partner_name: ServiceNow Store (partner apps)
+  partner: servicenow
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://store.servicenow.com/store/seller/b0110c36db5a7054364a5583ca9619cc
+  category: ServiceNow Store partner app / app certification
+  contract_reference:
+    register: ServiceNow Store (store.servicenow.com/store/sitemap_xml -> /store/app/<id> server-rendered pages)
+    standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+    spec_file: null
+    role: servicenow-store-partner
+    registered_name: Kyndryl Inc
+    register_id: b0110c36db5a7054364a5583ca9619cc
+    matched_domain: kyndryl.com
+    matched_by: domain
+    identity_source: the listing's own seller website link (no lookup)
+    certified_products:
+    - product: ServiceNow Certified App (scoped_app / integration)
+      product_type: scoped_app / integration
+      standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+      lapsed: false
+      products_sample:
+      - Kyndryl Integration - Base
+      - Kyndryl Integration - Incident Inbound
+      - Kyndryl Integration - Outbound Base
+      - Kyndryl Integration - Service Request Inbound
+      releases:
+      - Yokohama
+      - Zurich
+      - Australia
+    - product: ServiceNow Certified App (scoped_app / standalone)
+      product_type: scoped_app / standalone
+      standard: ServiceNow Store app certification (ServiceNow Certified App badge)
+      lapsed: true
+      products_sample:
+      - Kyndryl Catalog CI Wizard
+      - Kyndryl Catalog Process Engine
+      releases:
+      - Yokohama
+      - Zurich
+    products_sample:
+    - Kyndryl Catalog CI Wizard
+    - Kyndryl Catalog Process Engine
+    - Kyndryl Integration - Ansible
+    - Kyndryl Integration - Base
+    - Kyndryl Integration - Catalog API Wizard
+    - Kyndryl Integration - Incident Inbound
+    signal_note: 'listing alone = standard-participant; certified_products = one entry per Application type the
+      seller holds a ServiceNow Certified App badge for, standard named on each; lapsed: true when none of that
+      type''s certified apps lists either of the two newest release families on the Store; app counts are context,
+      never counted'
+    detected_by: sweep-servicenow-store.py
+    detected: '2026-10-23'
+  detected_by: sweep-servicenow-store.py
+  first_seen: '2026-10-23'
 generated: '2026-10-15'
 method: searched
 source:
@@ -205,3 +263,5 @@ checked:
 - https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/suppliers
 - https://www.crowncommercial.gov.uk/agreements
 - https://www.ncsc.gov.uk/cyberessentials/search
+- https://store.servicenow.com/store/app/
+- https://store.servicenow.com/store/sitemap_xml
